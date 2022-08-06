@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WeVote</string>
+    <string name="contract_address">0x3f2f2f3bb5443beb680e9b43fcc4eeb15077ead6</string>
+    <string name="infura_node">https://ropsten.infura.io/v3/c03614617efd48ecaa54750c34635087</string>
+</resources>

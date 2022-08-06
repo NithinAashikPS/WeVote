@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Your Voting slots is live now"
+        android:gravity="center"
+        android:textColor="@color/saffron"
+        android:fontFamily="@font/titillium_web_semi_bold"
+        android:textSize="@dimen/_15sdp"
+        tools:ignore="SpUsage"  />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Choose your Candidate from your Assembly"
+        android:gravity="center"
+        android:textColor="?attr/colorOnSecondary"
+        android:fontFamily="@font/titillium_web_bold"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="SpUsage"  />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/candidate_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_weight="1" />
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_colour">#F1F1F1</color>
+    <color name="edittext_colour">#DCDCDC</color>
+    <color name="secondary_colour">#818181</color>
+    <color name="accent_colour">#2E84D4</color>
+    <color name="black">#090909</color>
+    <color name="white">#FFFFFF</color>
+    <color name="saffron">#F68220</color>
+    <color name="green">#4DB947</color>
+</resources>

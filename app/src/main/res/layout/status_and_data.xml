@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Status and Data"
+        android:gravity="center_vertical"
+        android:textColor="?attr/colorSecondary"
+        android:fontFamily="@font/titillium_web_semi_bold"
+        android:textSize="@dimen/_15sdp"
+        tools:ignore="SpUsage"  />
+
+
+    <TextView
+        android:id="@+id/vote_date"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="You Voted For"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/dosis_medium"
+        android:textSize="@dimen/_14sdp" />
+
+    <LinearLayout
+        android:id="@+id/vote_count_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/winner_status"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="1455/12K\nVoters Online"
+                android:textColor="?attr/colorSecondary"
+                android:fontFamily="@font/dosis_bold"
+                android:textSize="@dimen/_10sdp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/winner_data"
+                app:layout_constraintStart_toStartOf="@+id/winner_data"
+                app:layout_constraintTop_toTopOf="@+id/winner_data" />
+
+            <ProgressBar
+                android:id="@+id/winner_data"
+                style="@style/CircularDeterminateProgressBar"
+                android:layout_width="@dimen/_125sdp"
+                android:layout_height="@dimen/_125sdp"
+                android:indeterminateOnly="false"
+                android:progress="60"
+                android:progressDrawable="@drawable/progress"
+                android:rotation="-90"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/my_status"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="10K/12K\nVoted"
+                android:fontFamily="@font/dosis_bold"
+                android:textColor="?attr/colorSecondary"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/my_data"
+                app:layout_constraintEnd_toEndOf="@+id/my_data"
+                app:layout_constraintStart_toStartOf="@+id/my_data"
+                app:layout_constraintTop_toTopOf="@+id/my_data" />
+
+            <ProgressBar
+                android:id="@+id/my_data"
+                style="@style/CircularDeterminateProgressBar"
+                android:layout_width="@dimen/_125sdp"
+                android:layout_height="@dimen/_125sdp"
+                android:indeterminateOnly="false"
+                android:progress="1"
+                android:max="2"
+                android:progressDrawable="@drawable/progress"
+                android:rotation="-90"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

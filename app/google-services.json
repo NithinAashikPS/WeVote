@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "996822303403",
+    "firebase_url": "https://wevote-2c7c4-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "wevote-2c7c4",
+    "storage_bucket": "wevote-2c7c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996822303403:android:048c6bf2407f29b30aedee",
+        "android_client_info": {
+          "package_name": "com.mlt.wevote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996822303403-ot188rhsgvjvd35eps23itp2mgvf5ljl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mlt.wevote",
+            "certificate_hash": "85c29ffcd4fa3e36ca1c0af66c17e78ce8020afe"
+          }
+        },
+        {
+          "client_id": "996822303403-hskdg0vioc0606t7v055bt315k4apouo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXoYDz1Y9rDTpkUuu7pL6S2farQtQZ_20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996822303403-hskdg0vioc0606t7v055bt315k4apouo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
